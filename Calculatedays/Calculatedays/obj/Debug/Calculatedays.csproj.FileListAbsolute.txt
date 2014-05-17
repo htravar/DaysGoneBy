@@ -1,0 +1,6 @@
+c:\users\heather\documents\visual studio 2012\Projects\Calculatedays\Calculatedays\bin\Debug\Calculatedays.exe.config
+c:\users\heather\documents\visual studio 2012\Projects\Calculatedays\Calculatedays\bin\Debug\Calculatedays.exe
+c:\users\heather\documents\visual studio 2012\Projects\Calculatedays\Calculatedays\bin\Debug\Calculatedays.pdb
+c:\users\heather\documents\visual studio 2012\Projects\Calculatedays\Calculatedays\obj\Debug\Calculatedays.csprojResolveAssemblyReference.cache
+c:\users\heather\documents\visual studio 2012\Projects\Calculatedays\Calculatedays\obj\Debug\Calculatedays.exe
+c:\users\heather\documents\visual studio 2012\Projects\Calculatedays\Calculatedays\obj\Debug\Calculatedays.pdb
