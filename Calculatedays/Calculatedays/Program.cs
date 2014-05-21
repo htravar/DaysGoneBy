@@ -14,22 +14,25 @@ using System.Threading.Tasks;
          //get a date past from the user
          Console.WriteLine("Enter the date you bought your vehicle.");
          Console.WriteLine("Use this formate, 01/01/2011.");
+         //store user input in a DateTime variable
          DateTime whenBought = Convert.ToDateTime(Console.ReadLine());//this will give you the date AND the time
          Console.WriteLine();
-         DateTime boughtDateOnly = whenBought.Date;//so create an obj to extract just the date
-         Console.WriteLine("Vehicle was bought on {0}.", boughtDateOnly.ToString("d"));//how to display only the date
+         DateTime boughtDateOnly = whenBought.Date;//create new DateTime obj to be able to get just the date
+         Console.WriteLine("Vehicle was bought on {0}.", boughtDateOnly.ToString("d"));//use "d" to display only date
        
          //get the current date on the local machine                  
-         DateTime Today = DateTime.Today;
-         DateTime dateOnly = Today.Date;
-         Console.WriteLine("Today's date is {0}.", dateOnly.ToString("d"));
+         DateTime Today = DateTime.Today;//Today is a property of the DateTime struct
+         DateTime todayDateOnly = Today.Date;//create new obj to be able to get just the date
+         Console.WriteLine("Today's date is {0}.", todayDateOnly.ToString("d"));//use "d" to display only date
 
-         TimeSpan daysGoneBy = DateTime.Today.Subtract(whenBought);
-         
+         TimeSpan daysGoneBy = DateTime.Today.Subtract(whenBought);//now subtract user date from current date with TimeSpan
+         string output = null;
+         output = "The number of days elapsed since the vehicle was bought: " + daysGoneBy.ToString("%d");
+         Console.WriteLine(output);
+         Console.WriteLine();
 
-   
-         
-         Console.WriteLine("The number of days elapsed since the vehicle was bought is: {0}.", daysGoneBy);
+         Console.WriteLine("This is the result if you don't create a new object.");
+         Console.WriteLine("Today's date: {0}.", DateTime.Today);
 
          Console.ReadKey();
       }//end Main method
