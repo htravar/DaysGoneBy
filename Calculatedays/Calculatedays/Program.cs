@@ -25,8 +25,8 @@ using System.Threading.Tasks;
          DateTime todayDateOnly = Today.Date;//create new obj to be able to get just the date
          Console.WriteLine("Today's date is {0}.", todayDateOnly.ToString("d"));//use "d" to display only date
 
-         TimeSpan daysGoneBy = DateTime.Today.Subtract(whenBought);//now subtract user date from current date with TimeSpan
-         string output = null;
+         TimeSpan daysGoneBy = todayDateOnly.Subtract(boughtDateOnly);//now subtract user date from current date with TimeSpan
+         string output;
          output = "The number of days elapsed since the vehicle was bought: " + daysGoneBy.ToString("%d");
          Console.WriteLine(output);
          Console.WriteLine();
